@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background:url('Global connections.png') rgba(0,0,0,0.3);
+.header {
+    background:url('../img/global-connections.png') rgba(0,0,0,0.3);
     background-blend-mode:multiply;
     background-position:center;
     background-size:cover ;
