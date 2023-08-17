@@ -1,0 +1,177 @@
+header {
+    background:url('Global connections.png') rgba(0,0,0,0.3);
+    background-blend-mode:multiply;
+    background-position:center;
+    background-size:cover ;
+    background-repeat:no-repeat;
+}
+
+@media(max-width: 798px){
+    .sidebar{
+        background-color: rgba(45, 117, 226, 1);
+        backdrop-filter: blur(10px);
+    }
+}
+
+.container-fluid{
+    padding: 5% 9%;
+}
+
+.head-section-font {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    line-height: 64px;
+    letter-spacing: -0.16px;
+
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 10%;
+     line-height: 48px;
+    text-align: left;
+    margin-left: 5%;
+        text-transform: uppercase;
+}
+
+
+
+@media(max-width: 798px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+.ad {
+    width: 90%;
+    height: 505.466px;
+    background-color: gray;
+    justify-content: center;
+    margin: 5% 5%;
+    display: inline-flex;
+    
+
+}
+.ad .small-btn {
+    display: block;
+}
+.ad .ad_text {
+    text-align: start;
+    justify-self: center;
+    align-self: center;
+    padding-left: 50px;
+
+}
+.ad .ad_text .small-btn .small-text {
+    color: #fff;
+
+
+}
+
+.ad .ad_text .big-text {
+    color: #fff;
+}
+
+.ad .ad-btn {
+    margin-top: 2%;
+
+}
+
+@media(max-width: 798px) {
+    .ad {
+        height: 250px;
+    }
+    .ad .ad_text {
+        text-align: start;
+        padding: 40px;
+    }
+}
+
+
+#post .cards{
+    
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+
+}
+
+
+.card {
+    flex: 1;
+    margin: 0.5rem;
+    padding: 1rem;
+    border: 0.5rem;
+    min-width: 376px;
+    margin: 10px;
+}
+
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.user-time {
+    color:  #2F3244;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+svg {
+    display: inline-block;
+    margin: 7px 0 0 45% ;
+
+}
+.big-text {
+    width: 267px;
+    height: 96px;
+    font-size: 24px;
+    font-weight: 700;
+    color:  #2F3244;
+    line-height: 32px;
+}
+.small-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.small-btn .small-text {
+    width: 260px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5%;
+    color: #2F3244;
+    display: flex;
+  
+
+
+}
+.small-btn button {
+    display: inline-block;
+    width: 89px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: blue;
+    color: #fff;
+    margin-left: px;
+    padding: 6px;
+    transition: background-color 0.2s;
+    
+    
+
+}

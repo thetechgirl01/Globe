@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header {
+    background:url('../img/global-connections.png') rgba(0,0,0,0.3);
+    background-blend-mode:multiply;
+    background-position:center;
+    background-size:cover ;
+    background-repeat:no-repeat;
+}
+
+@media(max-width: 991px){
+    .sidebar{
+        background-color: rgba(45, 117, 226, 1);
+        backdrop-filter: blur(10px);
+    }
+}
+
+.container-fluid{
+    padding: 5% 9%;
+}
+
+.head-section-font {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
