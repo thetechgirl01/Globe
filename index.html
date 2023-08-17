@@ -619,23 +619,48 @@
                </div>
            </div>
        </div>
+       </div>
 
    </section>
 
-   <script>
-    const toggleBtn = document.querySelector('.toggle-btn')
-    const toggleBtnIcon = document.querySelector('.toggle-btn i')
-    const dropDownMenu = document.querySelector('.dropdown-menu')
+   <!-- Footer starts here -->
 
-    toggleBtn.oneclick = function () {
-        dropDownMenu.classList.toggle('open')
-        const isOpen = dropDownMenu.classList.contains('open')
+   <footer class="footer-background-color">
+    <h1 class="footer-blog">Blog</h1>  
+    <hr class="footer-hr"> 
+    <div class="footer-body">
+        <ul class="footer-ul">
+            <li class="footer-pages">Pages</li>
+            <li class="footer-tags"><a href="#">Home</a></li>
+            <li class="footer-tags"><a href="#">About Globe</a></li>
+            <li class="footer-tags"><a href="#">Contact</a></li>
+        </ul>
+        <ul>
+            <li class="footer-pages">Template</li>
+            <li class="footer-tags"><a href="#">Style Guide</a></li>
+            <li class="footer-tags"><a href="#">Changelog</a></li>
+            <li class="footer-tags"><a href="#">Licenses</a></li>
+        </ul>
+        <ul>
+            <li class="footer-pages">Categories</li>
+            <li class="footer-tags"><a href="#">Fashion</a></li>
+            <li class="footer-tags"><a href="#">Business</a></li>
+            <li class="footer-tags"><a href="#">Food</a></li>
+        </ul>
+        <div class="footer-newsletter">
+            <p class="footer-news">Newsletter</p>
+            <form>
+                <input type="email" name="email" placeholder="Enter your email..." required>
+                <input type="submit" value="Submit">
+            </form>
+        </div> 
+    </div>
 
-        toggleBtnIcon.classList = isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars'
-    }
-   </script>
-    
+</footer>
+
+
+
+   <!-- JS -->
+   <script src="js/script.js"> </script>
 </body>
 </html>
