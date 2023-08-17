@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdnjs.com font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="css/main.css">
     
@@ -13,85 +15,43 @@
 </head>
 <body>
 
-    <header class="vh-100 overflow-hidden header">
-        <div class="head-section-font">
-
-            <!-- Navbar (Using Bootsrap) -->
-        
-            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-                <div class="container">
-        
-                    <!-- Logo -->
-        
-                  <a class="navbar-brand fs-2" href="#">Globe</a>
-        
-                  <!-- Toggle Button -->
-        
-                  <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-        
-                  <!-- SideBar -->
-        
-                  <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        
-                    <!-- SideBar Header -->
-        
-                    <div class="offcanvas-header text-white border-bottom">
-                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Globe</h5>
-                      <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-        
-                    <!-- SideBar Body -->
-        
-                    <div class="offcanvas-body">
-                      <ul class="navbar-nav justify-content-end align-items-center fs-6 flex-grow-1 pe-3">
-                        <li class="nav-item mx-2">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item dropdown mx-2">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Categories
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another Reaction</a></li>
-                              <li>
-                                <hr class="dropdown-divider">
-                              </li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                          </li>
-                        <li class="nav-item mx-2">
-                          <a class="nav-link" href="#about">About Globe</a>
-                        </li>
-                      </ul>
-                      <div class="d-flex justify-content-center align-items-center gap-3">
-             
-                        <!-- Get Started -->
-        
-                      <a href="#getStarted" class="text-white text-decoration-none px-xl-4 py-2 rounded-2 fs-5 " style="background-color: #2e75df;">Get Started</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-        
-              <!-- Title -->
-        
-              <main class="container-fluid">
-                <section class="w-100 vh-100 d-flex flex-column text-white fs-1">
-                    <h1 style="font-size: 1.5em;">
-                        Learn Something.
-                    </h1>
-                    <h2 style="font-size: 0.8em;">
-                        Come across stories, on
-                        <div>Globe latest news</div> 
-                    </h2>
-                </section>
-              </main>
+    <div class="header-div">
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Globe</a></div>
+            <ul class="links">
+                <li><a href="hero">Home</a></li>
+                <li><a href="business">Business</a></li>
+                <li><a href="fashion">Fashion</a></li>
+                <li><a href="food">Food</a></li>
+                <li><a href="about globe">About Globe</a></li>
+            </ul>
+            <a href="#" class="action-btn">Log in</a>
+            <a href="#" class="action-btn">Sign up</a>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
             </div>
+        </div>
+        <div class="dropdown-menu open">
+                <li><a href="hero">Home</a></li>
+                <li><a href="business">Business</a></li>
+                <li><a href="fashion">Fashion</a></li>
+                <li><a href="food">Food</a></li>
+                <li><a href="about globe">About Globe</a></li>
+                <li>
+                    <a href="#" class="action-btn">Log in</a>
+                    <a href="#" class="action-btn">Sign up</a>
+                </li>
+        </div>
     </header>
+    <main>
+        <section id="hero">
+            <h1>Learn Something</h1>
+            <p>Come across stories on,</p>
+            <p>Globe latest News</p>
+        </section>
+    </main>
+    </div>
 
     <!-- ad display section-->
 
@@ -649,6 +609,21 @@
        </div>
 
    </section>
+
+   <script>
+    const toggleBtn = document.querySelector('.toggle-btn')
+    const toggleBtnIcon = document.querySelector('.toggle-btn i')
+    const dropDownMenu = document.querySelector('.dropdown-menu')
+
+    toggleBtn.oneclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+   </script>
     
 </body>
 </html>
