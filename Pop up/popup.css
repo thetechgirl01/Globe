@@ -1,0 +1,28 @@
+.outer-box {
+    background: #FFF;
+    border: 1px solid black;
+    display: inline-flex;
+    padding: 60px 393px 101px 41px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 41px;
+  }
+  
+  .inner-box {
+
+    color: #E22A5C;
+    background-color:#F9D4DE;
+    display: flex;
+    width: 509px;
+    height: 50px;
+    padding: 13px 178px 13px 177px;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.08px;
+ 
+  }
