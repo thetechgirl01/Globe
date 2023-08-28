@@ -221,11 +221,14 @@ h2 {
 
 .ad {
     width: 90%;
+    background-image:url('../img/global-connections.png');
+    mix-blend-mode: darken;
     height: 505.466px;
     background-color: gray;
     justify-content: center;
     margin: 5% 5%;
     display: inline-flex;
+    background-position: left;
     
 
 }
