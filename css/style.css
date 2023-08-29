@@ -222,9 +222,10 @@ h2 {
 .ad {
     width: 90%;
     background-image:url('../img/global-connections.png');
-    mix-blend-mode: darken;
     height: 505.466px;
-    background-color: gray;
+    background-color: #000;
+    position: inherit;
+    mix-blend-mode: darken;
     justify-content: center;
     margin: 5% 5%;
     display: inline-flex;
@@ -531,8 +532,11 @@ input[type=submit] {
   }
   
   .login-title {
-    font-size: 24px;
-    font-weight: bold;
+    width: 121px;
+    height: 40px;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
     text-align: center;
     margin-top: 5px;
     color: #2f3244;
@@ -540,14 +544,20 @@ input[type=submit] {
   }
   
   .input-group {
+    width: 509px;
+    height: 82px;
+    gap: 8px;
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
   
   label {
+    height: 24px;
+    line-height: 24px;
     font-size: 16px;
-    font-weight: bold;
+    line-height: 24px;
+    font-weight: 700;
     color: #2f3244;
   }
   
@@ -560,10 +570,12 @@ input[type=submit] {
   }
   
   .login-button {
+    width: 509px;
+    height: 50px;
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
@@ -598,6 +610,19 @@ input[type=submit] {
     color:#2e75df;
   }
 
+  .sign-up-body {
+    background-image: url('../img/global-connections.png');
+    background-position: left;
+  }
+  .darken-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value to control darkness */
+    mix-blend-mode: multiply;
+  }
   .signup-container {
     width: 509px;
     height: 708px;
@@ -611,55 +636,48 @@ input[type=submit] {
   }
   
   .signup-title {
-    font-size: 24px;
-    font-weight: bold;
+    width: 121px;
+    height: 40px;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
     text-align: center;
-  }
-  
-  .input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  label {
-    font-size: 16px;
+    margin-top: 5px;
+    color: #2f3244;
     font-weight: bold;
+   
   }
   
-  input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .signup-button {
+
+  #signup-button {
+    width: 509px;
+    height: 50px;
+    margin-top: 20px;
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
-  .signup-button:hover {
+  #signup-button:hover {
     background-color: #0056b3;
   }
   
   #sign-up {
-    margin: 0;
+   
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f0f0;
   font-family: "inter";
 }
 
 #login {
-    margin: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
