@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     const signupButton = document.getElementById('signup-button');
 
