@@ -51,19 +51,26 @@
          <div>
             <h1 class="update-title">Title</h1>
          </div>
-         <div>
-            <h1 class="update-sacrifice">10 Things You Need To Sacrifice To Become Rich.</h1>
-         </div>
-         <div class="blogging-img">
-            <img src="img/Rectangle 433.png" alt="Blogging">
+         <div class="formUpperArea">
+            <label for="blog-upload">
+				<textarea class="input-title" name="message" rows="1" cols="10" placeholder="| Enter Title" required></textarea>
+                <div class="upload-container">
+                    <button class="primaryButton" id="uploadButton"><img src="./img/Group (2).png" id="image" alt="">Upload image</button>
+                    <div class="preview-container" id="previewContainer">
+                      <img src="#" id="previewImage" class="preview-image" alt="Uploaded Image">
+                      <button class="cancelButton" id="cancelButton"><img src="img/cancel-button.png" alt=""></button>
+                    </div>
+                    <input type="file" id="imageUpload" style="display: none" accept="image/*">
+           </label>
          </div>
          <div class="blog-body-info">
-            <p class="blog-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-               Quaerat aliquam nesciunt officiis perferendis similique corrupti, voluptas,
-               libero nemo a accusantium nostrum eligendi. 
-               Autem nisi corrupti asperiores mollitia officia, nulla molestias?</p>
+				<div class="formMiddleArea">
+					<textarea class="input-story" name="message" rows="4" cols="50" placeholder="| Tell Your Story" required></textarea>
+			  </div>
+					<button class="buttonsection">Publish</button>
          </div>
       </div>
     </div>
+    <script src="js/update-message-globe.js"></script>
 </body>
 </html>
