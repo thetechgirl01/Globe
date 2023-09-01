@@ -1,9 +1,11 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     const signupButton = document.getElementById('signup-button');
+    let loaderVisible = false;
 
     signupButton.addEventListener('click', async function(event) {
         event.preventDefault();
+
 
         const firstName = document.getElementById('first-name');
         const lastName = document.getElementById('last-name');
@@ -50,6 +52,30 @@ document.addEventListener('DOMContentLoaded', function() {
             clearError(confirmPassword);
         }
 
+        function showLoader() {
+            loader.style.display = 'block';
+            signupButton.style.display = 'none'; // Hide the button while showing the loader
+            loaderVisible = true; // Set loader visibility to true
+        }
+
+        // Function to hide the loader
+        function hideLoader() {
+            loader.style.display = 'none';
+            signupButton.style.display = 'block'; // Show the button again
+            loaderVisible = false; // Set loader visibility to false
+        }
+
+        // Check if the loader is visible before attempting to hide it
+        function tryHideLoader() {
+            if (loaderVisible) {
+                setTimeout(function() {
+                    tryHideLoader(); // Hide the loader after the alert appears
+                }, 1000); // Wait for 1 second before hiding the loader
+            }
+        }
+
+        showLoader(); // Show the loader when the Sign Up button is clicked
+
         // Rest of your code for form submission
         try {
             const response = await fetch('https://globe-blog.onrender.com/api/v1/users', {
@@ -70,18 +96,20 @@ document.addEventListener('DOMContentLoaded', function() {
             if (response.status === 200) {
                 alert('Account registered successfully:', responseData.message);
                 // Redirect to the landing page upon successful signup
-                window.location.href = '/src/landingpage.html'; // Replace with your landing page URL
+                window.location.href = '/src/landingpage.html'; 
             } else if (response.status === 409) {
                 alert('Account already exists:', responseData.message);
-                
             } else {
                 alert('An error occurred: Please try again', responseData.message);
             }
         } catch (error) {
             alert('An error occurred: Please try again', error);
-    
+        } finally {
+            setTimeout(function() {
+                hideLoader(); // Hide the loader after the alert appears
+            }, 1000); // Wait for 1 second before hiding the loader
         }
-    }); 
+    });
 
     // Show error message and style the field
     function showError(field, message) {
