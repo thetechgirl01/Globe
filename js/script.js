@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (response.status === 200) {
                 alert('Account registered successfully:', responseData.message);
                 // Redirect to the landing page upon successful signup
-                window.location.href = '../index.html'; // Replace with your landing page URL
+                window.location.href = '/src/landingpage.html'; // Replace with your landing page URL
             } else if (response.status === 409) {
                 alert('Account already exists:', responseData.message);
                 
@@ -79,9 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         } catch (error) {
             alert('An error occurred: Please try again', error);
-            setTimeout(function() {
-                window.location.href = '/src/landingpage.html'; // Replace with your landing page URL
-            }, 3000);
+    
         }
     }); 
 
@@ -100,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
         errorMessage.style.textAlign = 'center';
         errorMessage.style.fontWeight = '700';
         errorMessage.style.fontSize = '16px';
-        errorMessage.style.width = '500px';
+        errorMessage.style.width = '355px';
         errorMessage.style.padding = '5px';
         errorMessage.style.lineHeight = '50px';
         errorMessage.style.marginTop = '-2px';
