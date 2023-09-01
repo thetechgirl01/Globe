@@ -1,0 +1,41 @@
+h3{
+    text-align: center;
+    width: 700px;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+}
+.img-p{
+     display: flex; 
+}
+.olivia{
+    font-family: 'Inter', sans-serif;
+    padding-left: 15px;
+    font-size: 24px
+}
+.wave{
+    display: flex;
+    width: 50%;
+    background-position-y: center;
+}
+.ellip{
+    width: 55.71px;
+    height: 55.71px;
+}
+.hand, i{
+    width: 29.35px;
+    height: 31.97px;
+}
+.hand:focus{
+    background-color: #2f3244;
+}
+.like{
+    font-family: 'Inter', sans-serif;
+    color: grey/1200 #2f3244;
+    padding-left: 15px;
+    font-size: 20px;  
+}
+input{
+    border-radius: 20px;
+     
+
+}   
