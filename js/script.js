@@ -79,10 +79,10 @@ document.addEventListener('DOMContentLoaded', function() {
         } catch (error) {
             alert('An error occurred: Please try again', error);
             setTimeout(function() {
-                window.location.href = 'index.html'; // Replace with your landing page URL
+                window.location.href = '/src/landingpage.html'; // Replace with your landing page URL
             }, 3000);
         }
-    });
+    }); 
 
     // Show error message and style the field
     function showError(field, message) {
@@ -95,13 +95,16 @@ document.addEventListener('DOMContentLoaded', function() {
         const errorMessage = document.createElement('p');
         errorMessage.textContent = message;
         errorMessage.classList.add('error-message');
-        errorMessage.style.color = 'red';
-        errorMessage.style.width = '300px';
+        errorMessage.style.color = '#E22A5C'
+        errorMessage.style.textAlign = 'center';
+        errorMessage.style.fontWeight = '700';
+        errorMessage.style.fontSize = '16px';
+        errorMessage.style.width = '500px';
         errorMessage.style.padding = '5px';
         errorMessage.style.lineHeight = '50px';
-        errorMessage.style.borderRadius = '5px';
         errorMessage.style.marginTop = '-2px';
-        errorMessage.style.backgroundColor = '#d3d3d3';
+        errorMessage.style.backgroundColor = '#F9D4DE';
+
         
         field.parentElement.insertBefore(errorMessage, field);
 

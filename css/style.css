@@ -615,17 +615,8 @@ input[type=submit] {
     background-image: url('../img/global-connections.png');
     background-position: left;
   }
-  .darken-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value to control darkness */
-    mix-blend-mode: multiply;
-  }
+ 
   .signup-container {
-    width: 509px;
     height: 708px;
     background-color: #fff;
     border-radius: 10px;
@@ -699,4 +690,29 @@ input[type=submit] {
     text-decoration: none;
     color: #2e75df;
     font-weight: 700;
+  }
+
+
+  .sign-up-body {
+    background: rgba(0, 0, 0, 0.7);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-blend-mode: darken;
+  }
+
+  .sign-up-body img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    mix-blend-mode: darken;
+  }
+
+ 
+  #sign-up .input-group input[type="text"]:value {
+    left: -110px;
   }
