@@ -25,8 +25,14 @@ h3{
     width: 29.35px;
     height: 31.97px;
 }
-.hand:focus{
-    background-color: #2f3244;
+.hand {
+    filter: grayscale(100); /* Apply grayscale filter */
+    transition: filter 0.3s ease; 
+}
+
+.hand:hover {
+    filter: grayscale(0);
+    outline: none;
 }
 .like{
     font-family: 'Inter', sans-serif;
