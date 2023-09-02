@@ -162,3 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+
+/* clap interactivity */
+
