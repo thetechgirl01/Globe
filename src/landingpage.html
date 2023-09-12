@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- cdnjs.com font-awesome -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/main.css">
 
@@ -25,19 +28,20 @@
         <header>
             <div class="navbar">
                 <div class="logo-links">
-                    <div class="logo"><a href="#">Globe</a></div>
+                    <div class="logo"><a href="./landingpage.html">Globe</a></div>
                     <ul class="links">
                         <div class="linker">
-                            <li><a href="hero">Home</a></li>
+                            <li><a href="./landingpage.html">Home</a></li>
                             <li><a href="business">Business</a></li>
                             <li><a href="fashion">Fashion</a></li>
                             <li><a href="food">Food</a></li>
-                            <li><a href="about globe">About Globe</a></li>
-                            <div>
+                            <li><a href="../about-globe.html">About Globe</a></li>
+                        <div>
                     </ul>
                 </div>
                 <div>
                 </div>
+                <a href="../update-message-globe.html" style="color:white; font-size: 25px;">Create Post</a>
                 <div class="toggle-btn">
                     <i class="fa-solid fa-bars"></i>
                 </div>
@@ -134,7 +138,7 @@
 
                     <div class="small-btn">
                         <span class="small-text">Things you need to sacrifice to become rich with stress</span>
-                        <span> <button>Read more</button></span>
+                        <span> <button><a href="./readmore.html"> Read more</a></button></span>
                     </div>
                 </div>
             </div>
@@ -667,8 +671,8 @@
         <div class="footer-body">
             <ul class="footer-ul">
                 <li class="footer-pages">Pages</li>
-                <li class="footer-tags"><a href="#">Home</a></li>
-                <li class="footer-tags"><a href="#">About Globe</a></li>
+                <li class="footer-tags"><a href="./landingpage.html">Home</a></li>
+                <li class="footer-tags"><a href="about-globe.html">About Globe</a></li>
                 <li class="footer-tags"><a href="#">Contact</a></li>
             </ul>
             <ul>
@@ -698,6 +702,7 @@
 
     <!-- JS -->
     <script src="js/script.js"> </script>
+    <script src="js/getPost.js"> </script>
 </body>
 
 </html>
