@@ -1,0 +1,244 @@
+/* Header styling */
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    padding: 10px 0;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 22px 20px;
+}
+
+#message-globe {
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 32px;
+    color: black;
+    font-weight: 700;
+}
+
+#message-globe:hover {
+    color: #2E75DF;
+}
+
+.message-nav-left {
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.message-nav-left:hover {
+    color: #2E75DF;
+}
+
+.message-left {
+    display: flex;
+    align-items: center;
+}
+
+.message-right {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.message-dropdown-toggle {
+    padding-left: 30px;
+}
+
+.dropdown-toggle::after {
+    margin-left: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+
+/* Message-body */
+
+.update-body {
+    margin: 11% 5% 0% 30%;
+}
+
+.update-title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+
+
+/* title-text */
+
+
+.input-title {
+    width: 65%;
+    height: 67px;
+    top: 51px;
+    border-radius: 12px;
+    border: 0.9999998807907104px solid #000000; /* Adjust border style as needed */
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.015em;
+    text-align: left;
+    padding: 20px; /* Adding padding for text readability */
+  }
+  
+  .input-title::placeholder {
+    height: 40px;
+    top: 78px;
+    left: 34px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.015em;
+    text-align: left;
+  }
+  
+  
+
+
+/* form-upper-area */
+
+
+.formUpperAreaa {
+    margin-top: 50px;
+    max-width: 100%;
+}
+
+.formUpperAreaa img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* button */
+
+.primaryButton{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline;
+    align-self: flex-end;
+    background-color: #D5E3F9;
+    border-radius: 8px;
+    border: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    color: blue;
+    transform: translate(292%, 20%);
+}
+
+
+.primaryButton img {
+    margin-right: 10px;
+    margin-bottom: -2px;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 700px;
+}
+
+/* upload-img-button */
+
+.preview-container {
+    display: none;
+    position: relative;
+  }
+  .preview-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  .cancelButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+
+/* tell your story */
+
+.input-story {
+    margin-top: 100px;
+    width: 65%;
+    height: 67px;
+    top: 51px;
+    border-radius: 12px;
+    border: 0.9999998807907104px solid #000000; /* Adjust border style as needed */
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.015em;
+    text-align: left;
+    padding: 15px 20px 100px 20px; /* Adding padding for text readability */
+  }
+  
+  .input-story::placeholder {
+    height: 40px;
+    top: 78px;
+    left: 34px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.015em;
+    text-align: left;
+  }
+
+/* publish */
+
+.buttonsection{
+    background-color: #3074dc;
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: translate(415%, 70%);
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20%;
+}
