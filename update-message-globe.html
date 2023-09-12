@@ -1,76 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
-   <link rel="stylesheet" href="css/update-message-globe.css">
-   <title>Update Message Globe</title>
-</head>
-<body>
-   <div>
+    <link rel="stylesheet" href="css/update-message-globe.css" />
+    <title>Globe | Create Post</title>
+  </head>
+  <body>
+    <div>
       <header>
-         <nav class="message-header">
-             <div class="message-left">
-                 <a href="#" id="message-globe">Globe</a>
-                 <a href="#" class="message-nav-left">Draft in</a>
-                 <a href="#" class="message-nav-left">Olivia Rhye</a>
-             </div>
-             <div class="message-right">
-                 <div class="dropdown">
-                     <a href="#" class="message-dropdown-toggle"><img src="img/fi-rr-menu-dots-vertical.png" alt="list-dropdown"></a>
-                     <div class="dropdown-content">
-                         <a href="#">Section 1</a>
-                         <a href="#">Section 2</a>
-                     </div>
-                 </div>
-                 <div class="dropdown">
-                     <a href="#" class="message-dropdown-toggle"><img src="img/fi-rs-bell.png" alt="notification"></a>
-                     <div class="dropdown-content">
-                         <a href="#">Service 1</a>
-                         <a href="#">Service 2</a>
-                     </div>
-                 </div>
-                 <div class="dropdown">
-                     <a href="#" class="message-dropdown-toggle"><img src="img/user-dropdown.png" alt="user"></a>
-                     <div class="dropdown-content">
-                         <a href="#">Email</a>
-                         <a href="#">Phone</a>
-                         <a href="#">Location</a>
-                     </div>
-                 </div>
-             </div>
-         </nav>
-     </header>
-      <div class="update-body">
-         <div>
-            <h1 class="update-title">Title</h1>
-         </div>
-         <div class="formUpperArea">
-            <label for="blog-upload">
-				<textarea class="input-title" name="message" rows="1" cols="10" placeholder="| Enter Title" required></textarea>
-                <div class="upload-container">
-                    <button class="primaryButton" id="uploadButton"><img src="./img/Group (2).png" id="image" alt="">Upload image</button>
-                    <div class="preview-container" id="previewContainer">
-                      <img src="#" id="previewImage" class="preview-image" alt="Uploaded Image">
-                      <button class="cancelButton" id="cancelButton"><img src="img/cancel-button.png" alt=""></button>
-                    </div>
-                    <input type="file" id="imageUpload" style="display: none" accept="image/*">
-           </label>
-         </div>
-         <div class="blog-body-info">
-				<div class="formMiddleArea">
-					<textarea class="input-story" name="message" rows="4" cols="50" placeholder="| Tell Your Story" required></textarea>
-			  </div>
-					<button class="buttonsection">Publish</button>
-         </div>
-      </div>
+        <nav class="message-header">
+          <div class="message-left">
+            <a href="./src/landingpage.html" id="message-globe">Globe</a>
+            <a href="#" class="message-nav-left">Draft in</a>
+            <a href="#" class="message-nav-left">Olivia Rhye</a>
+          </div>
+          <div class="message-right">
+            <div class="dropdown">
+              <a href="#" class="message-dropdown-toggle"
+                ><img
+                  src="img/fi-rr-menu-dots-vertical.png"
+                  alt="list-dropdown"
+              /></a>
+              <div class="dropdown-content">
+                <a href="#">Section 1</a>
+                <a href="#">Section 2</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="#" class="message-dropdown-toggle"
+                ><img src="img/fi-rs-bell.png" alt="notification"
+              /></a>
+              <div class="dropdown-content">
+                <a href="#">Service 1</a>
+                <a href="#">Service 2</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="#" class="message-dropdown-toggle"
+                ><img src="img/user-dropdown.png" alt="user"
+              /></a>
+              <div class="dropdown-content">
+                <a href="#">Email</a>
+                <a href="#">Phone</a>
+                <a href="#">Location</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <form class="update-body">
+        <div>
+          <h1 class="update-title">Title</h1>
+        </div>
+        <div class="formUpperArea">
+          <label for="blog-upload" class="blog-upload">
+            <textarea
+              class="input-title"
+              id="input-title"
+              name="message"
+              rows="1"
+              cols="10"
+              placeholder="| Enter Title"
+              required
+            ></textarea>
+            <div class="upload-container">
+              <button class="primaryButton" id="uploadButton">
+                <img src="./img/Group (2).png" id="image" alt="" />Upload image
+              </button>
+              <div class="preview-container" id="previewContainer">
+                <img
+                  src="#"
+                  id="previewImage"
+                  class="preview-image"
+                  alt="Uploaded Image"
+                />
+                <button class="cancelButton" id="cancelButton">
+                  <img src="img/cancel-button.png" alt="" />
+                </button>
+              </div>
+              <input
+                type="file"
+                id="imageUpload"
+                style="display: none"
+                accept="image/*"
+              />
+            </div>
+          </label>
+        </div>
+        <div class="blog-body-info">
+          <div class="formMiddleArea">
+            <textarea
+              class="input-story"
+              id="input-story"
+              name="message"
+              rows="4"
+              cols="50"
+              placeholder="| Tell Your Story"
+              minlength="70"
+              required
+            ></textarea>
+          </div>
+          <div id="loader" style="display: none;"></div>
+          <button class="buttonsection">Publish</button>
+        </div>
+      </form>
     </div>
     <script src="js/update-message-globe.js"></script>
-</body>
+  </body>
 </html>
