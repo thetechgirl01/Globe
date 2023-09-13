@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>signup page</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Montserrat:wght@100;200;600;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="sign-up-body">
+    <img src="../img/global-connections.png" alt="">
+
+  
+
+   <section id="sign-up" class="sign-up">
+   
+    <div class="signup-container z-0">
+        <div class="signup-title">Sign Up</div>
+        <form action="">
+
+            <div class="input-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="firstName" >
+              </div>
+       
+        <div class="input-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" >
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" >
+        </div>
+       
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password">
+        </div>
+        <div class="input-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" >
+        </div>
+        <button id="signup-button" >Sign Up<!-- Add this div for the loader -->
+          </button>
+          <div class="loader" style="display: none;"></div>
+      </form>
+        <div class="login-link">Already have an account? <a href="./login.html" class="login-link two">Login</a></div>
+      </div>
+
+  
+   </section>
+  </div>
+
+   <script src="../js/script.js"></script>
+</body>
+</html>
