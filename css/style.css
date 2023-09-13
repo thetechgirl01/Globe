@@ -3,6 +3,10 @@ html {
   font-family: 'inter';
 }
 
+button{
+  min-width: fit-content;
+}
+
 .header-div,
 .header-read-more {
   height: 80vh;
@@ -337,13 +341,20 @@ svg {
     letter-spacing: 0.5%;
     color: #2F3244;
     display: flex;
-  
-
-
 }
+.clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 2.6em; 
+  line-height: 1.3em;
+}
+
 .small-btn button {
     display: inline-block;
-    width: 89px;
+    /* width: 89px; */
     height: 40px;
     border-radius: 10px;
     background-color: blue;
@@ -351,12 +362,17 @@ svg {
     margin-left: px;
     padding: 6px;
     transition: background-color 0.2s;
-    
-    
-
 }
-
+.small-btn span>button.read-more-btn {
+  min-width: -moz-fit-content; /* For Firefox 3+ and Firefox for Android 4+ */
+  min-width: fit-content; /* Standard property for modern browsers */
+  
+}
 /* Read More */
+
+.read-more-btn{
+  min-width: fit-content;
+}
 
 #blog {
   margin: 5%;
@@ -516,10 +532,10 @@ input[type=submit] {
 
   
   .input-group {
-    width: 509px;
+    width: MIN(90%,509px);
     height: 82px;
     justify-content: center;
-    padding: 0 80px;
+    padding: 0 MIN(10%,80px);
     gap: 8px;
     display: flex;
     flex-direction: column;
@@ -579,7 +595,7 @@ input[type=submit] {
   }
  
   .signup-container {
-    width: 509px;
+    width: MIN(60%,509px);
     height: 730px;
     top: 106px;
     margin-top: 0;
@@ -606,12 +622,16 @@ input[type=submit] {
     font-weight: bold;
    
   }
+
+  .signup-form{
+    text-align: center;
+  }
   
 
   #signup-button {
-    width: 352px;
+    width: MIN(80%,352px);
     height: 50px;
-    margin: 0 80px;
+    margin: 0 auto;
     margin-top: 20px;
     background-color: #007bff;
     color: #fff;
@@ -638,6 +658,10 @@ input[type=submit] {
   font-family: "inter";
 }
 
+.login-container{
+  min-width: 90%;
+}
+
 #login {
 
   display: flex;
@@ -646,6 +670,7 @@ input[type=submit] {
   height: 100vh;
   background-color: #f0f0f0;
   font-family: "inter";
+
 }
 
 .login-err-msg {
