@@ -111,7 +111,7 @@ publishButton.addEventListener("click", async (e) => {
     if (response.status === 200 || response.status === 201) {
       alert("Post Created Successfully:");
       // Redirect to the landing page upon successful signup
-      // window.location.href = "/src/landingpage.html";
+      window.location.href = "/src/landingpage.html";
     } else {
       alert("An error occurred: Please try again", responseData.message);
     }
